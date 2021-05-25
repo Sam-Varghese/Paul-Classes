@@ -1,0 +1,71 @@
+.headings {
+  color: blue;
+  text-shadow: 5px 6px 12px white;
+  font-size: 80px;
+  font-family: "Pacifico", cursive;
+  background: linear-gradient(to right, #7f00ff, #e100ff);
+}
+
+.button {
+  background-color: yellow; /* Green */
+  border: 5px solid blue;
+  color: blue;
+  text-align: center;
+  text-decoration: none;
+  font-size: 35px;
+  padding: 15px;
+  float: center;
+  margin: 30px;
+  border-radius: 30px;
+  transition-duration: 0.5s;
+  box-shadow: 15px 10px 8px rgb(10, 223, 209);
+  font-family: "Sacramento", cursive;
+}
+
+.button:hover {
+  background-color: cyan;
+  box-shadow: 10px 5px 8px rgb(59, 50, 8);
+  color: black;
+  border: 5px solid black;
+}
+
+.button:active {
+  background-color: black;
+  color: white;
+  border: 5px solid red;
+  transition-duration: 0s;
+}
+
+body {
+  background-image: url("Images/bg-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px ridge orange;
+}
+
+.menu {
+  margin-top: 0%;
+  color: black;
+  background-color: rgb(16, 252, 236);
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0px 10px 0px 10px;
+}
+
+.menu:hover {
+  margin-top: 0%;
+  color: blue;
+  background-color: yellow;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0px 15px 0px 15px;
+}
+
+.menu:active {
+  margin-top: 0%;
+  color: white;
+  background-color: black;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 0px 15px 0px 15px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Handwriting 1 -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Handwriting 2 -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylings.css" />
+    <title>Classes</title>
+  </head>
+  <body>
+    <h1 align="center" class="headings">Classes</h1>
+    <div align="center">
+      <button class="button">New Class</button>
+    </div>
+    <script>
+      fetch("data.json")
+        .then((response) => response.json())
+        .then(function (classes) {
+          console.log(classes);
+          Object.keys(classes).forEach(function func(class_data) {
+            let btn = document.createElement("button");
+            btn.innerHTML = class_data;
+            btn.name = class_data;
+            document.body.appendChild(btn);
+            btn.className = "button";
+            btn.onclick = function () {
+              links = classes[class_data];
+              links.forEach(func);
+              console.log(links);
+              function func(link) {
+                console.log(class_data);
+                window.open(link);
+              }
+            };
+          });
+        });
+    </script>
+  </body>
+</html>
