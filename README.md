@@ -10,7 +10,11 @@ This is a repository made in order to make a program to manage tuitions (Specifi
 
 <hr>
 
-- In order to contribute to this repository, firstly fork it.
+- In order to contribute to this repository or see it working, firstly fork it.
 - Now clone this repository in your computer by putting `git clone url` command, where url should be replace with the url of your forked repo.
 - Open this cloned repo in your preffered editor.
 - Open `main.html` in your browser.
+- This is the main page of this project.
+- In order to contribute, create an issue an the submit a PR related to that.
+
+<hr>
