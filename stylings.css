@@ -69,3 +69,21 @@ body {
   border-radius: 10px;
   padding: 0px 15px 0px 15px;
 }
+
+.text {
+  font-size: 35px;
+  color: blue;
+  font-family: "Playball", cursive;
+  padding: 25px 25px 25px 25px;
+}
+
+form {
+  text-align: center;
+}
+
+.input {
+  font-size: 35px;
+  margin: 10px 25px 10px 25px;
+  font-family: "Petit Formal Script", cursive;
+  background-color: rgb(20, 246, 250);
+}
