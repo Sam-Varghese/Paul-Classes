@@ -85,5 +85,34 @@ form {
   font-size: 35px;
   margin: 10px 25px 10px 25px;
   font-family: "Petit Formal Script", cursive;
-  background-color: rgb(20, 246, 250);
+  background-color: cyan;
+  transition-duration: 0.5s;
+}
+
+.input:hover {
+  font-size: 35px;
+  margin: 10px 25px 10px 25px;
+  font-family: "Petit Formal Script", cursive;
+  background-color: gold;
+}
+
+.input:focus {
+  width: 75%;
+  background-color: yellow;
+}
+
+.drpdwn {
+  font-size: 35px;
+  background-color: cyan;
+  margin: 10px 25px 10px 25px;
+  font-family: "Petit Formal Script", cursive;
+  width: 580px;
+}
+
+.drpdwn:focus {
+  font-size: 35px;
+  background-color: cyan;
+  margin: 10px 25px 85px 25px;
+  font-family: "Petit Formal Script", cursive;
+  width: 39%;
 }

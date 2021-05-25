@@ -32,7 +32,7 @@
     <h1 align="center" class="headings">Registration</h1>
     <div align="center"><button class="button">Import Data</button></div>
     <form>
-      <label for="FName" class="text">First name of student: </label>
+      <label for="FName" class="text">First name of student: </label><br />
       <input
         type="text"
         id="FName"
@@ -40,7 +40,7 @@
         name="First Name"
         placeholder="First name"
       /><br />
-      <label for="LName" class="text">Last name of student: </label>
+      <label for="LName" class="text">Last name of student: </label><br />
       <input
         type="text"
         id="LName"
@@ -48,7 +48,7 @@
         name="Last Name"
         placeholder="Last name"
       /><br />
-      <label for="Class" class="text">Class of student: </label>
+      <label for="Class" class="text">Class of student: </label><br />
       <input
         type="text"
         id="Class"
@@ -56,7 +56,7 @@
         name="Class"
         placeholder="Class"
       /><br />
-      <label for="School" class="text">School of student: </label>
+      <label for="School" class="text">School of student: </label><br />
       <input
         type="text"
         id="School"
@@ -65,8 +65,8 @@
         placeholder="School name"
       /><br />
       <label for="Contact Number 1" class="text"
-        >First contact number of student:
-      </label>
+        >First contact number of student: </label
+      ><br />
       <input
         type="number"
         id="Contact Number 1"
@@ -75,8 +75,8 @@
         placeholder="First contact number"
       /><br />
       <label for="Contact Number 2" class="text"
-        >Second contact number of student:
-      </label>
+        >Second contact number of student: </label
+      ><br />
       <input
         type="number"
         id="Contact Number 2"
@@ -84,7 +84,7 @@
         name="Contact Number 2"
         placeholder="Second contact number"
       /><br />
-      <label for="EMail ID" class="text">EMail ID of student: </label>
+      <label for="EMail ID" class="text">EMail ID of student: </label><br />
       <input
         type="email"
         id="EMail ID"
@@ -92,15 +92,13 @@
         name="EMail ID"
         placeholder="EMail ID"
       /><br />
-      <label for="Mode" class="text">Mode of attending: </label>
-      <input
-        type="text"
-        id="Mode"
-        class="input"
-        name="Mode"
-        placeholder="Online/ Offline"
-      /><br />
-      <label for="Fathers Business" class="text">Fathers business: </label>
+      <label for="Mode" class="text">Mode of attending: </label><br />
+      <select id="Mode" name="Mode" class="drpdwn">
+        <option value="Online" class="drpdwn">Online</option>
+        <option value="Offline" class="drpdwn">Offline</option></select
+      ><br />
+      <label for="Fathers Business" class="text">Fathers business: </label
+      ><br />
       <input
         type="text"
         id="Fathers Business"
@@ -108,16 +106,7 @@
         name="Fathers Business"
         placeholder="Fathers business"
       /><br />
-      <label for="Date Of Admission" class="text"
-        >Date Of Admission of student:
-      </label>
-      <input
-        type="date"
-        id="Date Of Admission"
-        class="input"
-        name="Date Of Admission"
-      /><br />
-      <label for="Address" class="text">Address of student: </label>
+      <label for="Address" class="text">Address of student: </label><br />
       <input
         type="text"
         id="Address"
@@ -125,11 +114,20 @@
         name="Address"
         placeholder="Address"
       /><br />
-      <input type="reset" class="button">
+      <label for="Date Of Admission" class="text"
+        >Date Of Admission of student: </label
+      ><br />
+      <input
+        type="date"
+        id="Date Of Admission"
+        class="input"
+        name="Date Of Admission" 
+        style="width: 580px;"
+      /><br />
+      <input type="reset" class="button" />
     </form>
     <div align="center">
-      <button class="button">Submit</button
-      >
+      <button class="button">Submit</button>
     </div>
   </body>
 </html>
