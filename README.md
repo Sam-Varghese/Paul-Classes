@@ -6,7 +6,7 @@ This is a repository made in order to make a program to manage tuitions (Specifi
 
 <hr>
 
-![Main WIndow](Images\main_window.PNG)
+![Main Window](Images/main_window.PNG)
 
 <hr>
 
