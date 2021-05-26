@@ -8,6 +8,12 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <script src="https://cdn.jsdelivr.net/npm/danfojs@0.2.4/lib/bundle.min.js"></script>
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+    <script>
+      text = document.getElementById("Submit file").value();
+      console.log(text);
+    </script>
 
     <!-- Font 1 -->
 
@@ -30,8 +36,14 @@
   </head>
   <body>
     <h1 align="center" class="headings">Registration</h1>
-    <div align="center"><button class="button">Import Data</button></div>
-    <form>
+    <div align="center" style="border: 10px ridge purple; margin: 10px">
+      <input type="file" accept=".csv" class="button" /><input
+        type="submit"
+        class="button"
+        id="Submit file"
+      />
+    </div>
+    <form style="border: 10px ridge purple; margin: 10px">
       <label for="FName" class="text">First name of student: </label><br />
       <input
         type="text"
@@ -121,13 +133,15 @@
         type="date"
         id="Date Of Admission"
         class="input"
-        name="Date Of Admission" 
-        style="width: 580px;"
+        name="Date Of Admission"
+        style="width: 580px"
       /><br />
       <input type="reset" class="button" />
     </form>
     <div align="center">
-      <button class="button">Submit</button>
+      <button class="button" id="submit_button" onclick="submitting()">
+        Submit
+      </button>
     </div>
   </body>
 </html>
